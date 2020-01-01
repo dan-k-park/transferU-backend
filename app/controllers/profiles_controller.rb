@@ -1,4 +1,6 @@
 class ProfilesController < ApplicationController
+  skip_before_action :authorized
+  
   def index
     profiles = Profile.all
     render :json => profiles
@@ -6,6 +8,7 @@ class ProfilesController < ApplicationController
 
   def show
     profile = Profile.find(params[:id])
+    byebug
     render :json => profile
   end
 

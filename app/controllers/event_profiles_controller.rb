@@ -1,4 +1,6 @@
 class EventProfilesController < ApplicationController
+  skip_before_action :authorized
+  
   def index
     eventProfiles = EventProfile.all
     render :json => eventProfiles
@@ -37,7 +39,7 @@ class EventProfilesController < ApplicationController
   private
 
   def eventProfile_params
-    params.require(:event_prfoile).permit(:event_id, :profile_id, :attending)
+    params.require(:event_profile).permit(:event_id, :profile_id, :attending)
   end
   
 end
