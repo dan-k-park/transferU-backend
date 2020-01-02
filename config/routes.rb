@@ -6,5 +6,6 @@ Rails.application.routes.draw do
   resources :categories
   resources :users#, only: [:create]
   post '/login', to: 'auth#create'
+  post '/register', to: 'user#create'
   get '/current_user', to: 'auth#show'
 end
