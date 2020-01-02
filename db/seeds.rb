@@ -20,9 +20,12 @@ end
 User.create(username: 'user1', password: 'words')
 User.create(username: 'user2', password: 'words')
 User.create(username: 'user3', password: 'words')
+User.create(username: 'user4', password: 'words')
 
-Profile.create(name: 'Dan Park', age: 23, bio: 'I have no idea what I\'m doing, someone please help. Ahhhhhhhh', avatarURL: 'https://pbs.twimg.com/media/DhYNqnGUYAAr6cC.jpg', school_id: 2929, user_id: 1)
-Profile.create(name: 'Pan Dark', age: 32, bio: 'I need an ice pack, IMMEDIATELY.', avatarURL: 'https://pbs.twimg.com/media/DhYNqnGUYAAr6cC.jpg', school_id: 3115, user_id: 2)
+Profile.create(name: 'Dan Park', age: 23, bio: 'I\'m going to be honest, I have no idea what I\'m doing.', avatarURL: 'https://www.sackettwaconia.com/wp-content/uploads/default-profile.png', school_id: 2929, user_id: 1)
+Profile.create(name: 'Dan Zaltsman', age: 27, bio: 'I have this lump at the bottom of my abdomen and it hurts a lot.  It feels good to push it in though.  I\'m pretty sure it\'s not a hernia.', avatarURL: 'https://www.sackettwaconia.com/wp-content/uploads/default-profile.png', school_id: 2929, user_id: 2)
+Profile.create(name: 'Cole Ditzler', age: 27, bio: 'Dude, cats are, um, mammals.', avatarURL: 'https://www.sackettwaconia.com/wp-content/uploads/default-profile.png', school_id: 2929, user_id: 3)
+Profile.create(name: 'Cole Ditzler', age: 27, bio: 'Dude, cats are, um, mammals.', avatarURL: 'https://www.sackettwaconia.com/wp-content/uploads/default-profile.png', school_id: 3115, user_id: 4)
 
 Category.create(name: 'Outdoor')
 Category.create(name: 'Social')
@@ -30,10 +33,9 @@ Category.create(name: 'Athletic')
 Category.create(name: 'Academic')
 Category.create(name: 'Other')
 
-Event.create(name: 'Pick Up Pennies', date: '12-25-2019', description: 'We\'ll be picking up pennies on the ground. Make sure they aren\'t actually holes so you don\'t fall in.', location: '1411 4th Ave Seattle, WA 98101', attendees: 0, category_id: 2, school_id: 2929, user_id: 1)
-Event.create(name: 'Cycling Burke-Gilman', date: '1-21-2019', description: 'Meet up to cycle down the trail.  There\'re plenty of Lime bikes lying around for those who don\'t have their own bike.', location: 'Northeast Seattle Seattle, WA 98105', attendees: 0, category_id: 1, school_id: 2929, user_id: 1)
-Event.create(name: 'Basketball!', date: '1-15-2019', description: 'Looking for a group of people to run casual games.  No tryhards please.', location: '3924 Montlake Blvd NE, Seattle, WA 98195', attendees: 0, category_id: 3, school_id: 2929, user_id: 3)
-Event.create(name: 'Country Roads', date: '4-12-1971', description: 'Country roads, take me home, to the place I belong. West Virginia, mountain mama, take me home, country roads', location: 'Shenandoah River', attendees: 0, category_id: 5, school_id: 3115, user_id: 2)
-Event.create(name: 'Pike Place Meetup', date: '12-29-2019', description: 'Out-of-state student looking for a group of people to explore the city with!  I figured Pike\'s would be a good place to start.', location: 'Pike St Seattle, WA 98101', attendees: 0, category_id: 2, school_id: 2929, user_id: 3)
+Event.create(name: 'Pick Up Pennies', date: '12-25-2020', description: 'We\'ll be picking up pennies on the ground. Make sure they aren\'t actually holes so you don\'t fall in.', location: '1411 4th Ave Seattle, WA 98101', attendees: 0, category_id: 2, school_id: 2929, user_id: 3)
+Event.create(name: 'Basketball', date: '1-15-2019', description: 'I am a long person looking for other people to play basketball with. My shooting isn\'t very accurate so if you\'re a good shooter then please sign up.', location: '3924 Montlake Blvd NE, Seattle, WA 98195', attendees: 0, category_id: 3, school_id: 2929, user_id: 2)
+Event.create(name: 'Going to H Mart', date: '1-3-2019', description: 'I\'m going to H Mart if anyone wants to come along.', location: '4216 The Ave, Seattle, WA 98105', attendees: 0, category_id: 1, school_id: 2929, user_id: 1)
+Event.create(name: 'Country Roads', date: '4-12-1971', description: 'Country roads, take me home, to the place I belong. West Virginia, mountain mama, take me home, country roads', location: 'Shenandoah River', attendees: 0, category_id: 5, school_id: 3115, user_id: 4)
 
 

@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   resources :profiles
   resources :schools
   resources :categories
-  resources :users#, only: [:create]
+  resources :users #only: [:create]
   post '/login', to: 'auth#create'
   post '/register', to: 'users#create'
   get '/current_user', to: 'auth#show'
