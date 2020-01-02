@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_01_02_004955) do
+ActiveRecord::Schema.define(version: 2020_01_02_053054) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -41,8 +41,10 @@ ActiveRecord::Schema.define(version: 2020_01_02_004955) do
     t.bigint "school_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.bigint "user_id", null: false
     t.index ["category_id"], name: "index_events_on_category_id"
     t.index ["school_id"], name: "index_events_on_school_id"
+    t.index ["user_id"], name: "index_events_on_user_id"
   end
 
   create_table "profiles", force: :cascade do |t|
@@ -77,6 +79,7 @@ ActiveRecord::Schema.define(version: 2020_01_02_004955) do
   add_foreign_key "event_profiles", "profiles"
   add_foreign_key "events", "categories"
   add_foreign_key "events", "schools"
+  add_foreign_key "events", "users"
   add_foreign_key "profiles", "schools"
   add_foreign_key "profiles", "users"
 end

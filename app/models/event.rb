@@ -4,4 +4,5 @@ class Event < ApplicationRecord
 
   belongs_to :category
   belongs_to :school
+  belongs_to :user
 end
