@@ -8,7 +8,6 @@ class ProfilesController < ApplicationController
 
   def show
     profile = Profile.find(params[:id])
-    byebug
     render :json => profile
   end
 
@@ -35,6 +34,6 @@ class ProfilesController < ApplicationController
   private
 
   def profile_params
-    params.require(:profile).permit(:name, :avatarUrl, :age, :bio)
+    params.require(:profile).permit(:name, :age, :bio, :avatarURL, :school_id, :user_id)
   end
 end
