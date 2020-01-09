@@ -33,9 +33,9 @@ Category.create(name: 'Athletic')
 Category.create(name: 'Academic')
 Category.create(name: 'Other')
 
-Event.create(name: 'Pick Up Pennies', date: '12-25-2020', description: 'We\'ll be picking up pennies on the ground. Make sure they aren\'t actually holes so you don\'t fall in.', location: '1411 4th Ave Seattle, WA 98101', attendees: 0, category_id: 2, school_id: 2929, user_id: 3)
-Event.create(name: 'Basketball', date: '1-15-2019', description: 'I am a long person looking for other people to play basketball with. My shooting isn\'t very accurate so if you\'re a good shooter then please sign up.', location: '3924 Montlake Blvd NE, Seattle, WA 98195', attendees: 0, category_id: 3, school_id: 2929, user_id: 2)
-Event.create(name: 'Going to H Mart', date: '1-3-2019', description: 'I\'m going to H Mart if anyone wants to come along.', location: '4216 The Ave, Seattle, WA 98105', attendees: 0, category_id: 1, school_id: 2929, user_id: 1)
-Event.create(name: 'Country Roads', date: '4-12-1971', description: 'Country roads, take me home, to the place I belong. West Virginia, mountain mama, take me home, country roads', location: 'Shenandoah River', attendees: 0, category_id: 5, school_id: 3115, user_id: 4)
+Event.create(name: 'Pick Up Pennies', date: '12-25-2020', time: '12:00 pm', description: 'We\'ll be picking up pennies on the ground. Make sure they aren\'t actually holes so you don\'t fall in.', location: '1411 4th Ave Seattle, WA 98101', attendees: 0, category_id: 2, school_id: 2929, user_id: 3)
+Event.create(name: 'Basketball', date: '1-15-2020', time: '2:30 pm', description: 'I am a long person looking for other people to play basketball with. My shooting isn\'t very accurate so if you\'re a good shooter then please sign up.', location: '3924 Montlake Blvd NE, Seattle, WA 98195', attendees: 1, category_id: 3, school_id: 2929, user_id: 2)
+Event.create(name: 'Going to H Mart', date: '1-19-2020', time: '9:30 am', description: 'I\'m going to H Mart if anyone wants to come along.', location: '4216 The Ave, Seattle, WA 98105', attendees: 2, category_id: 1, school_id: 2929, user_id: 1)
+Event.create(name: 'Country Roads', date: '4-12-1971', time: '12:00 am', description: 'Country roads, take me home, to the place I belong. West Virginia, mountain mama, take me home, country roads', location: 'Shenandoah River', attendees: 0, category_id: 5, school_id: 3115, user_id: 4)
 
 
